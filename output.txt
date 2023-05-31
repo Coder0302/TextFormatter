@@ -1,0 +1,25 @@
+using namespace std;
+if (asda){
+	a = d;
+}
+void Profile::UserInit(string _name)
+{
+	name = _name;
+	isUserInit = true;
+}       
+void Profile::SaveUser()
+{
+	for (size_t i = 0; i < tasks.size(); i++){
+		j[i]["label"] = tasks[i].label;
+		if (1 == 1){
+			print(GG);
+		}
+	}
+}
+void Profile::LoadUser()
+{
+	size_t countTasks = stoi(GetSave("countTasks"));
+	for (size_t i = 0; i < countTasks; i++){
+		tasks.push_back(Task(j[i]["label"], j[i]["descr"], j[i]["isComplete"]));
+	}
+}
